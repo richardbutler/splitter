@@ -1,12 +1,10 @@
-splitter
-========
+var splitter = require( ".." );
 
-Exploring a readable function overloading approach.
-
-Example
--------
-
-    function f() {
+describe( "splitter", function() {
+    
+    it( "should flow basic arguments", function() {
+        
+        function f() {
             var value;
             
             splitter( arguments )
@@ -23,6 +21,10 @@ Example
             return value;
         }
         
-        f( "foo", {}, [] );     // first
-        f( "foo" );             // second
-        f();                    // other
+        expect( f( "foo", {}, [] ) ).toBe( "first" );
+        expect( f( "foo" ) ).toBe( "second" );
+        expect( f() ).toBe( "other" );
+        
+    });
+    
+});

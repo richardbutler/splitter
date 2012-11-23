@@ -1,0 +1,13 @@
+{
+    "name": "splitter",
+    "description": "Little helper for overloading functions in JavaScript.",
+    "version": "0.1.0",
+    "author": {
+        "name": "Richard Butler",
+        "email": "rich@aspectvision.com"
+    },
+    "main": "splitter.js",
+    "scripts": {
+        "test": "jasmine-node test"
+    }
+}
